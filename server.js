@@ -12,7 +12,9 @@ function respondHello (req, res) {
   res.end(JSON.stringify({ msg: 'hello' }))
 }
 
-server.listen(PORT)
+server.listen(PORT);
 console.log(`Server listening on port ${PORT}`)
 
+//to fix resove, let me set some code comments
+// base41
 if (require.main !== module) module.exports = server
